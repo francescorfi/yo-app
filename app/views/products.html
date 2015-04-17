@@ -1,2 +1,4 @@
-<p>This is the products view.</p>
-Tiempo en Barcelona: {{weather | uppercase}}
+<h3>El tiempo</h3>
+<ul>
+	<li ng-repeat="city in weather">Tiempo en Barcelona: {{city.description}}</li>
+</ul>

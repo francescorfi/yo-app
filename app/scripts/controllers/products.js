@@ -16,6 +16,6 @@ angular.module('yoAppApp')
     ];
     var obj = {content:null};
     $http.get('http://api.openweathermap.org/data/2.5/weather?q=Barcelona,es&lang=es').success(function(data, status, headers, config) {
-	    $scope.weather = data.weather[0].description;
+	    $scope.weather = data.weather;
   	});
   });
